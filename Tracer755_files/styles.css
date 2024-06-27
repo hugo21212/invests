@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Outage;
+    src: url(../fonts/Outage.ttf);
+}
+.OutageFont {
+    font-family: Outage;
+}
+
+/* Your existing styles */
+body {
+    background-color: #130c24;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Outage;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+br {
+    user-select: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 45%;
+}
+
+nav.topbar {
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: row;
+    background: rgba(124, 124, 124, .2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(124, 124, 124, .28);
+    border-top: 0;
+    padding: .5vw;
+}
+
+nav.topbar h3 {
+    color: #fff;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    transition: .3s;
+}
+
+nav.topbar h3:hover {
+    color: #c7c7c7;
+    transition: .3s;
+}
+
+h3.topbar-selected {
+    color: #707070 !important;
+}
+
+.backimage {
+    background-image: linear-gradient(to bottom, transparent 95%, #130c24), url(../content/img/FmkW20HWYAAB-sF.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.halfbox {
+    width: 50%;
+}
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.flexbox-row-noMobile {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.homeHeadderPadding {
+    padding-top: 29.3vh;
+    padding-bottom: 39.746vh;
+}
+
+div.namePadding {
+    padding-left: 25%;
+}
+
+h1.nameDisplay {
+    font-size: 2.4vw;
+}
+
+h3.underNameDisplay {
+    font-size: 1.37vw;
+    padding-left: 1vw;
+}
+
+div.skillItem {
+    width: 11.5vw;
+    justify-self: center;
+    padding-left: .2vw;
+    padding-right: .2vw;
+}
+
+div.skillItem img {
+    border-radius: 50%;
+    max-width: 80%;
+    border: 1.5px solid #fff;
+    transform: scale(1);
+    transition: .6s;
+}
+
+div.skillItem img:hover {
+    transform: scale(1.05);
+    transition: .6s;
+}
+
+div.skillsFlexbox {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+hr.skillsbar {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width: 65%;
+}
+
+@media (max-width: 800px) {
+    div.halfbox {
+        width: 100% !important;
+    }
+
+    .flexbox-row {
+        flex-direction: column;
+    }
+
+    .backimage {
+        background-size: cover;
+    }
+
+    div.namePadding {
+        padding-left: 6%;
+    }
+
+    h1.nameDisplay {
+        font-size: 5vw;
+    }
+
+    h3.underNameDisplay {
+        font-size: 3vw;
+        padding-left: 4.3vw;
+    }
+
+    div.skillItem img {
+        border-radius: 50%;
+        max-width: 30%;
+    }
+
+    div.skillsFlexbox {
+        display: grid;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+    }
+
+    div.skillItem {
+        width: 80%;
+        justify-self: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 6vh;
+    }
+}
